@@ -1,0 +1,7 @@
+2019-08-13 14:03:38.025 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 17164 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 14:03:38.029 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 14:03:39.271 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 14:03:39.457 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 14:03:40.682 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.059 seconds (JVM running for 4.186)
+2019-08-13 14:03:41.034 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 14:03:41.043 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,593 @@
+2019-08-13 12:00:29.814 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:00:29.820 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:00:29.821 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:00:29.966 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:00:30.093 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:00:30.119 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@609cd4d8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13b6aecc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@158a8276, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3c3d9b6b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@79d8407f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5fbe4146, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1e66f1f5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4e50c791, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7530ad9c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58a9760d]
+2019-08-13 12:00:30.615 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 32320 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:00:30.615 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:00:32.080 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-08-13 12:00:32.206 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.211 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.214 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.217 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.221 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.226 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.229 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.233 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.236 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.240 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.244 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.247 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.251 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.362 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.365 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.369 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.373 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.375 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.378 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.380 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.383 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.385 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.388 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.391 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.393 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.396 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.398 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.401 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.403 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.407 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:00:32.409 [Druid-ConnectionPool-Create-1707901480] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/xyg, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'XYG'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1421)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1477)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1998)
+2019-08-13 12:11:35.424 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:11:35.429 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:11:35.430 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:11:35.578 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:11:35.700 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:11:35.721 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@394df057, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4961f6af, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5aebe890, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@65d09a04, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33c911a1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75db5df9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@707194ba, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1190200a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a2f6f80, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@45b4c3a9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@399c4be1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@291caca8]
+2019-08-13 12:11:36.190 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 34384 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:11:36.190 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:11:37.434 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:11:37.612 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:11:38.374 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:11:38.800 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.008 seconds (JVM running for 4.14)
+2019-08-13 12:11:39.137 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:11:39.138 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:11:39.150 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:12:44.924 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:12:44.931 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:12:44.932 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:12:45.073 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:12:45.205 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:12:45.230 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@75db5df9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@707194ba, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1190200a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6a2f6f80, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45b4c3a9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@399c4be1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@291caca8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@385e9564, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5b94b04d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@8c3b9d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4c39bec8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f79e]
+2019-08-13 12:12:45.728 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 13668 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:12:45.729 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:12:47.058 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-08-13 12:12:47.982 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:12:48.447 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.118 seconds (JVM running for 4.275)
+2019-08-13 12:12:48.793 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:12:48.803 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-08-13 12:14:07.111 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:14:07.117 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:14:07.118 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:14:07.275 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:14:07.401 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:14:07.422 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:14:07.870 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 24260 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:14:07.870 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:14:09.097 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:14:09.280 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:14:10.015 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:14:10.462 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 2.972 seconds (JVM running for 4.093)
+2019-08-13 12:14:10.788 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:14:10.790 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:14:10.802 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:22:45.817 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:22:45.823 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:22:45.824 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:22:45.970 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:22:46.098 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:22:46.127 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:22:46.641 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 27448 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:22:46.642 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:22:47.904 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:22:48.081 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:22:48.304 [main] WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.example.demoForMp.mapper.UserMapper.selectList] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectList]
+2019-08-13 12:22:48.819 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:22:49.250 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.053 seconds (JVM running for 4.163)
+2019-08-13 12:22:49.524 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:22:49.526 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:22:49.537 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:23:41.449 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:23:41.455 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:23:41.457 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:23:41.600 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:23:41.728 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:23:41.753 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@394df057, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4961f6af, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5aebe890, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@65d09a04, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33c911a1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75db5df9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@707194ba, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1190200a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a2f6f80, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@45b4c3a9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@399c4be1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@291caca8]
+2019-08-13 12:23:42.229 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 5904 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:23:42.230 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:23:43.457 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:23:43.640 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:23:43.860 [main] WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.example.demoForMp.mapper.UserMapper.selectList] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectList]
+2019-08-13 12:23:44.420 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:23:44.852 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.037 seconds (JVM running for 4.16)
+2019-08-13 12:23:45.136 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:23:45.138 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:23:45.151 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:24:29.912 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:24:29.919 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:24:29.920 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:24:30.065 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:24:30.189 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:24:30.210 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:24:30.683 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 27992 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:24:30.683 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:24:31.943 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:24:32.127 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:24:32.347 [main] WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.example.demoForMp.mapper.UserMapper.selectList] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectList]
+2019-08-13 12:24:32.988 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:24:33.457 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.168 seconds (JVM running for 4.262)
+2019-08-13 12:24:33.767 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:24:33.768 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:24:33.780 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:24:58.980 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:24:58.986 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:24:58.987 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:24:59.157 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:24:59.296 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:24:59.328 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:24:59.811 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 24152 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:24:59.812 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:25:01.196 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:25:01.395 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:25:02.244 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:25:02.773 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.366 seconds (JVM running for 4.563)
+2019-08-13 12:25:03.104 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:25:03.106 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:25:03.121 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:25:49.442 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:25:49.449 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:25:49.450 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:25:49.600 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:25:49.733 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:25:49.760 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:25:50.322 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 2728 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:25:50.322 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:25:51.632 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:25:51.840 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:25:52.659 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:25:53.173 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.344 seconds (JVM running for 4.479)
+2019-08-13 12:25:53.499 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:25:53.501 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:25:53.515 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:28:21.984 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:28:21.991 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:28:21.992 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:28:22.137 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:28:22.259 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:28:22.284 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:28:22.813 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 17884 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:28:22.814 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:28:24.094 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:28:24.279 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:28:25.041 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:28:25.470 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.113 seconds (JVM running for 4.219)
+2019-08-13 12:28:25.835 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:28:25.837 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:28:25.847 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:29:09.762 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:29:09.768 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:29:09.769 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:29:09.915 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:29:10.045 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:29:10.067 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:29:10.611 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 3472 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:29:10.612 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:29:11.930 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:29:12.108 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:29:12.879 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:29:13.323 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.184 seconds (JVM running for 4.289)
+2019-08-13 12:29:13.647 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:29:13.649 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:29:13.663 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:29:29.724 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:29:29.730 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:29:29.731 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:29:29.871 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:29:30.000 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:29:30.025 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:29:30.543 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 26640 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:29:30.544 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:29:31.771 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:29:31.970 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:29:32.115 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.example.demoForMp.entity.User.
+2019-08-13 12:29:32.750 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:29:33.195 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.1 seconds (JVM running for 4.222)
+2019-08-13 12:29:33.570 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:29:33.572 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:29:33.582 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:30:00.412 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:30:00.417 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:30:00.418 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:30:00.568 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:30:00.699 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:30:00.721 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:30:01.242 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 7532 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:30:01.243 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:30:02.697 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:30:02.861 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:30:03.629 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:30:04.053 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.262 seconds (JVM running for 4.394)
+2019-08-13 12:30:04.368 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:30:04.370 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:30:04.385 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:30:50.905 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:30:50.912 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:30:50.912 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:30:51.064 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:30:51.195 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:30:51.222 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:30:51.674 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 12688 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:30:51.674 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:30:52.948 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:30:53.137 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:30:53.930 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:30:54.396 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.102 seconds (JVM running for 4.237)
+2019-08-13 12:30:54.749 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:30:54.751 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:30:54.761 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-08-13 12:31:42.306 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demoForMp.mp.MybatisPlusTest], using SpringBootContextLoader
+2019-08-13 12:31:42.312 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demoForMp.mp.MybatisPlusTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-13 12:31:42.313 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demoForMp.mp.MybatisPlusTest]: MybatisPlusTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-13 12:31:42.455 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demoForMp.DemoForMpApplication for test class com.example.demoForMp.mp.MybatisPlusTest
+2019-08-13 12:31:42.578 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-13 12:31:42.601 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0c2f8d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305b7c14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6913c1fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66d18979, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bccb269, org.springframework.test.context.transaction.TransactionalTestExecutionListener@609cd4d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f7cd29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d8704ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13b6aecc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@158a8276, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c3d9b6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79d8407f]
+2019-08-13 12:31:43.113 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Starting MybatisPlusTest on SST-OCHO with PID 34500 (started by yxie in C:\MrX\springbootDemo\first\demoForMp)
+2019-08-13 12:31:43.113 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - The following profiles are active: mp
+2019-08-13 12:31:44.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-08-13 12:31:44.550 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-08-13 12:31:45.330 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:31:45.767 [main] INFO  com.example.demoForMp.mp.MybatisPlusTest - Started MybatisPlusTest in 3.098 seconds (JVM running for 4.203)
+2019-08-13 12:31:46.102 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 12:31:46.104 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-08-13 12:31:46.115 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
